@@ -48,7 +48,7 @@ export async function decryptAndExtract(stegoVideoFile, keyHex, onProgress) {
 
 export function fileUrl(path) {
   // Backend returns paths like "/files/xyz.avi" - prefix with /api for the proxy
-  return  'https://secure-steganography-1.onrender.com${path}';
+  return  "https://secure-steganography-1.onrender.com${path}";
 }
 
 export default api;
