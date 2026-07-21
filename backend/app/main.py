@@ -37,7 +37,7 @@ app = FastAPI(
 # deploying anywhere public.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://secure-steganography-2.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
