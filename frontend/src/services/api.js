@@ -3,7 +3,7 @@ import axios from "axios";
 // All requests go through Vite's dev proxy at /api -> http://127.0.0.1:8000
 // (see vite.config.js), so no CORS setup is needed in development.
 const api = axios.create({
-  baseURL:https://secure-steganography-1.onrender.com
+  baseURL: "https://secure-steganography-1.onrender.com",
 });
 
 /**
@@ -48,7 +48,7 @@ export async function decryptAndExtract(stegoVideoFile, keyHex, onProgress) {
 
 export function fileUrl(path) {
   // Backend returns paths like "/files/xyz.avi" - prefix with /api for the proxy
-  return https://secure-steganography-1.onrender.com${path};
+  return  'https://secure-steganography-1.onrender.com${path}';
 }
 
 export default api;
